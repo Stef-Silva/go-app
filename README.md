@@ -38,3 +38,7 @@ docker container run -d -p 8181:8080 steh/app-multi-stage:multi-stage
 docker history <IMAGE_ID>
 ```
 
+## Target
+```
+docker build -t steh/appapp-multi-stage:multi-stage -f Dockerfile.multistage --target=build .
+```
